@@ -7,8 +7,6 @@ var express      = require("express"),
     Comment      =require("./models/comment")
 
 
-
-    
 mongoose.connect("mongodb://localhost/yelp_camp", {useMongoClient:true});
 app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine", "ejs");
